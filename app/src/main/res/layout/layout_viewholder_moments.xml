@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingTop="10dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/sender_avatar_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sender_nike_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="default_user"
+            android:textSize="20sp"
+            android:textColor="#199"/>
+        <TextView
+            android:id="@+id/moments_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="default_content!"
+            android:textSize="20sp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/moments_images_list_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/moments_comments_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#aaa"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
