@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 
+import com.bumptech.glide.Glide;
 import com.thoughtworks.momentsdemo.item.Moments;
 import com.thoughtworks.momentsdemo.item.StepMoments;
 import com.thoughtworks.momentsdemo.item.User;
@@ -117,5 +118,6 @@ public class MainActivity extends AppCompatActivity {
         momentsListAdapter_.setLoadMoreData(stepMoments_.getStepSet());
       }
     },2000L);
+    Log.d("tag","需要合并");
   }
 }
