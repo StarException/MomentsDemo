@@ -119,5 +119,6 @@ public class MainActivity extends AppCompatActivity {
       }
     },2000L);
     Log.d("tag","需要合并");
+    Log.d("tag","需要合并2");
   }
 }
